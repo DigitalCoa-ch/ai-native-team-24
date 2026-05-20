@@ -135,7 +135,7 @@ export default function WorkflowDashboard() {
     return () => timers.forEach(clearTimeout);
   }, [gateStage]);
 
-  const handleGate1 = () => { setGate1Done(true); setActiveStep(6); setTimeout(() => setGateStage("gate1_done"), 300); };
+  const handleGate1 = () => { setGate1Done(true); setActiveStep(6); setGateStage("gate1_done"); };
   const handleGate2 = () => { setGate2Done(true); setActiveStep(7); setGateStage("gate2_done"); };
   const handleReset = () => { setGateStage("none"); setActiveStep(1); setGate1Done(false); setGate2Done(false); setFeedAge(0); setSystemHealth("degraded"); setShowFallback(false); };
 
@@ -157,7 +157,7 @@ export default function WorkflowDashboard() {
 
   const stepPhase = (stepId: number) => {
     if (isComplete && stepId <= 7) return "COMPLETE";
-    if (stepId === 5 && gate1Done) return "COMPLETE";
+    if (stepId === 5) return gate1Done ? "COMPLETE" : STEPS[4].phase;
     if (stepId === 6 && gate2Done) return "COMPLETE";
     if (stepId < activeStep) return "COMPLETE";
     if (stepId === activeStep) return STEPS[stepId - 1].phase;
