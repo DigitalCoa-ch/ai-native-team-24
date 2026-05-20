@@ -31,7 +31,7 @@ const colorMap = {
   },
 };
 
-export default function MemberCard({ name, color, delay }: MemberCardProps) {
+export default function MemberCard({ name, color, delay, role }: MemberCardProps) {
   const c = colorMap[color];
 
   return (
