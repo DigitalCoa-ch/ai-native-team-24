@@ -1,4 +1,5 @@
 import MemberCard from "@/components/MemberCard";
+import WorkflowDashboard from "@/components/WorkflowDashboard";
 
 const members = [
   { name: "Cloudine", color: "cyan" as const, delay: 0, role: "Prototype and Tools" },
@@ -77,6 +78,12 @@ export default function Home() {
           >
             Meet the Team
           </a>
+          <a
+            href="#workflow"
+            className="px-8 py-3.5 text-sm font-bold tracking-wider uppercase rounded-xl border border-[#ff00aa]/50 text-[#ff00aa] hover:bg-[#ff00aa]/10 transition-all hover:scale-105"
+          >
+            Live Demo
+          </a>
         </div>
       </section>
 
@@ -110,6 +117,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WorkflowDashboard />
 
       {/* Team Section */}
       <section id="team" className="relative z-10 px-8 lg:px-16 py-24">
