@@ -187,7 +187,7 @@ export default function WorkflowDashboard() {
           </span>
         </div>
         <p className="mt-3 text-sm font-inter text-gray-400 max-w-2xl">
-          Real-time geopolitical alert processing pipeline. Click Gate 1 (Nabiha) then Gate 2 (Irina) to complete the workflow.
+          Real-time geopolitical alert processing pipeline. Select a test feed scenario, then execute Gate 1 (Nabiha) and Gate 2 (Irina) validation overrides.
         </p>
       </div>
 
@@ -474,7 +474,7 @@ export default function WorkflowDashboard() {
             <button
               onClick={handleGate2}
               disabled={!gate1Done || gate2Done}
-              className={"w-full py-2.5 px-4 rounded-xl font-bold text-[10px] tracking-wider uppercase transition-all " + (!gate1Done ? "bg-gray-700/50 text-gray-500 cursor-not-allowed" : gate2Done ? "bg-green-600/50 text-green-300 cursor-not-allowed" : "bg-purple-500 text-white hover:bg-purple-400 hover:scale-[1.01]")}
+              className={"w-full py-2.5 px-4 rounded-xl font-bold text-[10px] tracking-wider uppercase transition-all " + (!gate1Done ? "bg-gray-700/60 text-gray-200 cursor-not-allowed" : gate2Done ? "bg-green-600/50 text-green-300 cursor-not-allowed" : "bg-purple-500 text-white hover:bg-purple-400 hover:scale-[1.01]")}
             >
               {gate2Done ? "Approved — Playbook Active" : "Approve Playbook: Re-route Logistics / Postpone Match"}
             </button>
