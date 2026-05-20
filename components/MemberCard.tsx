@@ -4,6 +4,7 @@ interface MemberCardProps {
   name: string;
   color: "cyan" | "purple" | "pink";
   delay: number;
+  role: string;
 }
 
 const colorMap = {
@@ -56,7 +57,7 @@ export default function MemberCard({ name, color, delay }: MemberCardProps) {
 
       {/* Role */}
       <p className="text-sm font-inter text-gray-400 mb-6">
-        Team Member
+        {role}
       </p>
 
       {/* Decorative line */}

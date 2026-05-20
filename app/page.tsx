@@ -1,9 +1,9 @@
 import MemberCard from "@/components/MemberCard";
 
 const members = [
-  { name: "Cloudine", color: "cyan" as const, delay: 0 },
-  { name: "Irina", color: "purple" as const, delay: 150 },
-  { name: "Nabiha", color: "pink" as const, delay: 300 },
+  { name: "Cloudine", color: "cyan" as const, delay: 0, role: "Prototype and Tools" },
+  { name: "Irina", color: "purple" as const, delay: 150, role: "Business Logic" },
+  { name: "Nabiha", color: "pink" as const, delay: 300, role: "Workflow and Risk" },
 ];
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Main title */}
         <h1 className="text-7xl lg:text-9xl font-black tracking-tighter mb-6">
-          <span className="gradient-text">ICN</span>
+          <span className="gradient-text">Geosport Shield</span>
         </h1>
 
         {/* Subtitle */}
