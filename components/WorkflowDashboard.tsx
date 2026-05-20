@@ -131,7 +131,7 @@ export default function WorkflowDashboard() {
 
   useEffect(() => {
     if (gateStage !== "none") return;
-    const timers = [2,3,4,5,6].map((_, i) => setTimeout(() => setActiveStep(i + 2), (i + 1) * 900));
+    const timers = [2,3,4].map((_, i) => setTimeout(() => setActiveStep(i + 2), (i + 1) * 900));
     return () => timers.forEach(clearTimeout);
   }, [gateStage]);
 
