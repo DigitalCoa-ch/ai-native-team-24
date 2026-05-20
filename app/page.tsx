@@ -80,7 +80,7 @@ export default function Home() {
           </a>
           <a
             href="#workflow"
-            className="px-8 py-3.5 text-sm font-bold tracking-wider uppercase rounded-xl border border-[#ff00aa]/50 text-[#ff00aa] hover:bg-[#ff00aa]/10 transition-all hover:scale-105"
+            className="relative z-50 pointer-events-auto px-8 py-3.5 text-sm font-bold tracking-wider uppercase rounded-xl border border-[#ff00aa]/50 text-[#ff00aa] hover:bg-[#ff00aa]/10 transition-all hover:scale-105"
           >
             Live Demo
           </a>
