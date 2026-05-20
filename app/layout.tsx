@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ICN | AI for a Better World",
-  description: "ICN Team Homepage — Contributing to a better world using AI",
+  title: "AI Native Team 24",
+  description: "AI Native Enterprise Lab - Team 24",
 };
 
 export default function RootLayout({
